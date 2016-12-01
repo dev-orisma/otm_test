@@ -1,0 +1,28 @@
+{
+  "name": "otm_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-orisma/otm_test.git"
+  },
+  "author": "kong@orisma.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-orisma/otm_test/issues"
+  },
+  "homepage": "https://github.com/dev-orisma/otm_test#readme",
+  "dependencies": {
+    "wdio-mocha-framework": "^0.5.4",
+    "webdriverio": "^4.4.0"
+  },
+  "devDependencies": {
+    "wdio-junit-reporter": "^0.1.0",
+    "wdio-mocha-framework": "^0.5.4",
+    "wdio-selenium-standalone-service": "0.0.7"
+  }
+}
