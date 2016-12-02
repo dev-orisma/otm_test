@@ -17,6 +17,7 @@ exports.config = {
         // 'path/to/excluded/files'
     ],
     host: '10.187.25.110',
+    // host: '127.0.0.1',
     port: 4444,
     path: '/wd/hub',
     //
