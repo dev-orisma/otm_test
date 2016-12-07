@@ -1,7 +1,7 @@
 var assert = require('assert');
 describe('Main', function() {
     it('Login', function () {
-        browser.url('http://otm.orisma.alpha/');
+        browser.url('http://10.187.25.110:8888/');
         var title = browser.getTitle();
         assert.equal(title, 'Orisma Task Manager');
         browser.waitForVisible('#email', 2000);
