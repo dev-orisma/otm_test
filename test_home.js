@@ -1,14 +1,13 @@
 var assert = require('assert');
 describe('Main', function() {
     it('Login', function () {
-        browser.url('http://10.187.25.110:8888/');
+        browser.url('/');
         var title = browser.getTitle();
-        assert.equal(title, 'Orisma Task Manager');
+        assert.equal(title, 'Login Page');
         browser.waitForVisible('#email', 2000);
         browser.setValue('#email', 'nuttanun@orisma.com');
         browser.setValue('#password', 'P@ssw0rd');
        	browser.submitForm('form');
-
     });
 
     it('Project', function () {
