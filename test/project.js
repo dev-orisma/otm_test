@@ -1,17 +1,8 @@
 var assert = require('assert');
-describe('Main', function() {
-    it('Login', function () {
-        browser.url('/');
-        var title = browser.getTitle();
-        assert.equal(title, 'Login Page');
-        browser.waitForVisible('#email', 2000);
-        browser.setValue('#email', 'nuttanun@orisma.com');
-        browser.setValue('#password', 'P@ssw0rd');
-       	browser.submitForm('form');
-    });
+describe('Project', function() {
 
     it('Project', function () {
-        browser.click('#logo-container');
+        browser.url('/');
         browser.waitForVisible('.head-bar button', 2000);
         browser.click('.head-bar button');
     });

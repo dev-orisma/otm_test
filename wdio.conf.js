@@ -10,7 +10,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        '*.js'
+        './test/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -146,12 +146,22 @@ exports.config = {
     //
     // Gets executed before test execution begins. At this point you can access all global
     // variables, such as `browser`. It is the perfect place to define custom commands.
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+      var chai = require('chai');
+      global.expect = chai.expect;
+      chai.Should();
+
+
+    },
     //
     // Hook that gets executed before the suite starts
-    // beforeSuite: function (suite) {
-    // },
+    beforeSuite: function (suite) {
+      browser.url('/login');
+        browser.waitForVisible('#email', 2000);
+        browser.setValue('#email', 'nuttanun@orisma.com');
+        browser.setValue('#password', 'P@ssw0rd');
+        browser.submitForm('form');
+    },
     //
     // Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
     // beforeEach in Mocha)
