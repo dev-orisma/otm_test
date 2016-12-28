@@ -15,4 +15,9 @@ describe('Project', function() {
         browser.click('.modal-footer button');
     });
 
+    it('edit Project', function () {  });
+
+    it('delete Project', function () {  });
+
+
 });
