@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dev-orisma/otm_test#readme",
   "dependencies": {
+    "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "wdio-mocha-framework": "^0.5.4",
     "webdriverio": "^4.4.0"
