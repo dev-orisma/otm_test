@@ -3,12 +3,10 @@ describe('Register', function() {
     it('Create new User', function () {
         browser.url('/register');
         var d = Date.now();
-        browser.setValue('#email', 'wdio@orisma.com');
-        browser.setValue('#name', 'wdio');
-        browser.setValue('#password', 'wdio');
-
+        browser.setValue('#email', 'user-'+d+'@orisma.com');
+        browser.setValue('#name', 'user-'+d);
+        browser.setValue('#password', 'test');
         browser.waitForVisible('.head-bar button', 2000);
-        browser.click('.head-bar button');
     });
 
 
