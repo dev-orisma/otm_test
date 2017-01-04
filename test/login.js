@@ -1,4 +1,4 @@
-var assert = require('assert');
+
 describe('Login', function() {
     it('Logout', function () {
         browser.url('/logout');
@@ -6,8 +6,8 @@ describe('Login', function() {
     });
     it('Login success', function () {
         browser.waitForVisible('#email', 2000);
-        browser.setValue('#email', 'nuttanun@orisma.com');
-        browser.setValue('#password', 'P@ssw0rd');
+        browser.setValue('#email', 'attapon@orisma.com');
+        browser.setValue('#password', '1234');
         browser.submitForm('form');
     });
 
