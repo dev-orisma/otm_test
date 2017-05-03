@@ -72,7 +72,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
-    baseUrl: 'http://otm.orisma.alpha:8999',
+    baseUrl: 'http://cimb.dev',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -157,13 +157,13 @@ exports.config = {
     },
     //
     // Hook that gets executed before the suite starts
-    beforeSuite: function (suite) {
-      browser.url('/login');
-        browser.waitForVisible('#email', 2000);
-        browser.setValue('#email', 'nuttanun@orisma.com');
-        browser.setValue('#password', 'P@ssw0rd');
-        browser.submitForm('form');
-    },
+    // beforeSuite: function (suite) {
+    //   browser.url('/login');
+    //     browser.waitForVisible('#email', 2000);
+    //     browser.setValue('#email', 'nuttanun@orisma.com');
+    //     browser.setValue('#password', 'P@ssw0rd');
+    //     browser.submitForm('form');
+    // },
     //
     // Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
     // beforeEach in Mocha)
