@@ -47,7 +47,7 @@ describe('Login', function() {
 
     it('Form [Step 1] - Captcha Validate Success', function () {
      browser.click('#step1_captcha');
-     browser.keys('gm6bm');
+     browser.keys('99999');
  });
 
     it('Form [Step 1] Click Submit', function () {
